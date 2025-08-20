@@ -1,0 +1,179 @@
+/* #region Body */
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #22343D;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* #endregion Body */
+
+/* #region Common */
+
+.container {
+    max-width: 369px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1150px) {
+    .container {
+        max-width: 1150px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+.hide {
+    display: none;
+}
+
+/* #endregion Common */
+
+/* #region Header  */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-logo {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.9;
+    color: #173a56;
+}
+
+.header-nav-links {
+    display: none;
+}
+
+.header-btns {
+    display: none;
+}
+
+.burger-menu {
+    height: 31px;
+    width: 28px;
+}
+
+@media screen and (min-width: 1150px) {
+    .header-logo {
+        margin-right: 237px;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+
+    .header-nav-links {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav-link {
+        line-height: 1.75;
+    }
+
+    .current {
+        font-weight: 600;
+    }
+
+    .header-btns-list {
+        display: flex;
+        column-gap: 21px;
+    }
+
+    .header-btn {
+        border-radius: 4px;
+        padding: 9px 25px;
+        font-weight: 600;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .signin-btn {
+        border: 1px solid #BCD0E5;
+        color: #173A56;
+    }
+
+    .signup-btn {
+        color: #ffffff;
+        background-color: #02897A;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+}
+
+/* .header-nav {
+    display: flex;
+    align-items: center;
+} */
+
+
+
+/* .header-btns {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+} */
+
+/* #endregion Header  */
