@@ -21,16 +21,15 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="head">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo header-logo">
-            <img
-              src="./images/logo.svg"
-              alt="Logo Business Promotion"
-              width="40"
-              height="36"
-            />Product
+            <svg class="icon-logo" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            Product
           </a>
 
           <ul class="header-nav-links">
@@ -48,9 +47,18 @@
           <li>
             <button type="button" class="header-btn signup-btn">Sign up</button>
           </li>
+          <button class="theme-btn">
+            <svg class="icon-theme" width="24" height="24">
+              <use href="./images/icons.svg#icon-theme"></use>
+            </svg>
+          </button>
         </ul>
 
-        <button type="button" class="burger-menu" mobile-menu-open>x</button>
+        <button type="button" class="burger-btn" mobile-menu-open>
+          <svg class="icon-burger" width="28" height="31">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -300,7 +308,7 @@
         </div>
       </section>
 
-      <!-- Pricing -->
+      <!-- Price table -->
       <section class="hide">
         <div class="container">
           <h2>Price Table</h2>
@@ -343,7 +351,7 @@
         </div>
       </section>
 
-      <!-- Feedback -->
+      <!-- What clients say -->
       <section class="hide">
         <div class="container">
           <h2>What Clients Say</h2>
@@ -413,66 +421,103 @@
       </section>
     </main>
 
-    <footer class="hide">
-      <div class="container">
-        <a href="./index.html">
-          <img
-            src="./images/logo.svg"
-            alt="Logo Business Promotion"
-            width="40"
-            height="36"
-          />Product
-        </a>
-        <ul>
-          <li>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              aria-label="Instagram"
-              >I</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              aria-label="Facebook"
-              >F</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              aria-label="Twitter"
-              >T</a
-            >
-          </li>
-        </ul>
-        <nav>
-          <p>Resource</p>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">FAQ</a></li>
+    <!-- Footer -->
+    <footer class="foot">
+      <div class="container footer-container">
+        <div class="logo-socials">
+          <a href="./index.html" class="logo footer-logo">
+            <svg class="icon-logo" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            Product
+          </a>
+          <ul class="social-links-list">
+            <li>
+              <a
+                class="social-icon-container"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-theme"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-icon-container"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-theme"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-icon-container"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-theme"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-          <p>Legal Stuff</p>
-          <ul>
-            <li><a href="">Disclaimer</a></li>
-            <li><a href="">Financing</a></li>
-            <li><a href="">Privacy Policy </a></li>
-          </ul>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-info-links">
+            <p class="footer-nav-header">Resource</p>
+            <ul class="footer-nav-list">
+              <li><a class="footer-nav-list-link" href="">About Us</a></li>
+              <li><a class="footer-nav-list-link" href="">Blog</a></li>
+              <li><a class="footer-nav-list-link" href="">Contact</a></li>
+              <li><a class="footer-nav-list-link" href="">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-legal-links">
+            <p class="footer-nav-header">Legal Stuff</p>
+            <ul class="footer-nav-list">
+              <li><a class="footer-nav-list-link" href="">Disclaimer</a></li>
+              <li><a class="footer-nav-list-link" href="">Financing</a></li>
+              <li>
+                <a class="footer-nav-list-link" href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="footer-nav-list-link" href="">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <p>knowing you're always on the best energy deal.</p>
-        <form>
-          It will be a form here<button type="submit">Sign up Now</button>
-        </form>
-        <p>Made With Love By Figmaland All Right Reserved</p>
+
+        <div class="footer-form-container">
+          <p class="footer-nav-header form-header">
+            knowing you're always on the best energy deal.
+          </p>
+          <form class="footer-form">
+            <label class="footer-form-label" for="footer-tel"> </label>
+            <div class="input-wrap">
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+              <svg class="input-svg" width="18" height="28">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <button class="footer-form-btn" type="submit">Sign up Now</button>
+          </form>
+        </div>
       </div>
+      <p class="under-footer-message">
+        Made With Love By Figmaland All Right Reserved
+      </p>
     </footer>
   </body>
 </html>
