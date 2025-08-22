@@ -54,11 +54,57 @@
           </button>
         </ul>
 
-        <button type="button" class="burger-btn" mobile-menu-open>
+        <button type="button" class="burger-btn" data-menu-open>
           <svg class="icon-burger" width="28" height="31">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="moile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="icon-cross" width="16" height="16">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <button class="mobile-theme-btn">
+            <svg class="icon-theme" width="24" height="24">
+              <use href="./images/icons.svg#icon-theme"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-links">
+              <li>
+                <a class="mobile-page-link current" href="./index.html"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a class="mobile-page-link" href="./pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a class="mobile-page-link" href="./customers.html"
+                  >Customers</a
+                >
+              </li>
+              <li><a class="mobile-page-link" href="">Resources</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu-btns-list">
+            <li>
+              <button type="button" class="mobile-menu-btn signin-btn">
+                Sign in
+              </button>
+            </li>
+            <li>
+              <button type="button" class="mobile-menu-btn signup-btn">
+                Sign up
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -519,5 +565,7 @@
         Made With Love By Figmaland All Right Reserved
       </p>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
